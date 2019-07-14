@@ -37,3 +37,14 @@ header label{
 #menu-bar:checked ~ .menu{
     transform: translateX(0%);
 }
+
+nav a{
+    translation: all .3s ease;
+}
+
+nav a:hover{
+    transform: scalate(1.1);
+    transform: translateX(0px);
+    font-size: 20px;
+    color: red;
+}
