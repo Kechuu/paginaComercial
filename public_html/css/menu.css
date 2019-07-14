@@ -39,7 +39,7 @@ header label{
 }
 
 nav a{
-    translation: all .3s ease;
+    transition: all .3s ease;
 }
 
 nav a:hover{
@@ -48,3 +48,8 @@ nav a:hover{
     font-size: 20px;
     color: red;
 }
+
+footer h5{
+    text-align: center;
+}
+
