@@ -1,0 +1,85 @@
+/*GENERAL...*/
+
+div#menu{
+   /* border:solid red;*/
+    /*position:relative;
+    margin-top: 160px; */
+    position:fixed;
+    display: inline-block;
+    margin-top:7.5%;
+    
+    width: 100%;
+    background: #333;
+}
+ul {
+    width: 100%;
+}
+/*list-style-> saca los iconos de los items*/
+#menu ul {
+    margin:0;
+    list-style: none;
+    padding: 0;
+}
+
+#menu li{
+    line-height: 3em;
+    position:relative;
+}
+
+#menu li ul{
+    position: absolute;
+}
+/*saca el subrayado del link..*/
+#menu a{
+    text-decoration: none;
+    display: block;
+    padding: 0 5.0em;
+    color: #ddd;
+
+    transition: .4s;
+}
+
+#menu a:hover{
+    background: rgba(0,0,0,.5);
+}
+
+/*PRIMER NIVEL...*/
+
+#menu > ul{
+    background: #333;
+    display: table;
+    width: 100%;
+    
+}
+
+#menu ul li{
+    float: left;
+}
+
+/*SEGUNDO NIVEL...*/
+
+
+#menu li li{
+    background: #222;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+
+    width: 300px;
+}
+
+#menu li:hover > ul > li{
+    max-height: 500px;
+    overflow: visible;
+}
+
+#menu > ul > li >ul{
+    top: 100%;
+}
+/*TERCER NIVEL...*/
+
+#menu ul ul ul{
+    left: 100%;
+    top:0;
+}
+

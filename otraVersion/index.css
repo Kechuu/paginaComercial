@@ -1,0 +1,139 @@
+@import url(menu.css);
+
+
+*{
+    max-width: 100%;
+}
+/*esto me permite tener un scrol(? sin tener que aumentar mas elementos
+body{
+    padding-bottom: 50em;
+}*/
+
+div{
+    display: inline-block;
+}
+
+nav{
+    top:0;
+    background: black;
+}
+nav#header{
+    border: solid black;
+    position: fixed;
+    width: 99%;
+    z-index: 0;
+}
+body{
+    background: black;
+}
+
+/* 
+div#menu posiciona la seccion del menu :v debajo del banner..
+top->lo posiciona debajo del banner
+width->permite que se ajuste a lo que da la ventana del navegador(?
+*/
+#img{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#main{
+    background: white;
+}
+
+div#img-school{
+    /*position: relative;
+    top:10em;
+    margin-top: 10em;*/
+    margin-top:10%;
+    width: 100%;
+    height: 600px;
+}
+
+
+/*
+div#main seccion donde están las noticias...
+position relative en si no moviliza la seccion pero permite la utilizacion
+de otro 'atributo' o caracteristica de css, que es top, en este caso
+*/
+div#main{
+    box-sizing: border-box;
+    /*position: relative;
+    top:160px;*/
+    
+    width: 100%;
+}
+
+/*
+div .section, seria el contenedor de tanto la imagen como el texto de la
+noticia..
+box-sizing: border-box permite que los px se cuenten como deberian...
+padding-> da el espacio entre la linea bordeada y la imagen
+width->es el tamaño del contenido en si
+*/
+div .section{
+    box-sizing: border-box;
+    border: darkblue solid;
+
+    display: inline-block;
+    padding: 15px;
+    width: 20%;
+    margin-top:0;
+    margin:2%;
+}
+
+
+/*div#img{
+   display: inline;
+}*/
+
+div#name{
+    position: relative;
+    /*display: inline-block;*/
+    margin:1%;
+    
+    left:25px;
+    bottom: 25px;
+    color: white;
+}
+
+div#form-buscador{
+    float: right;
+    margin: 1%;
+}
+
+.section-img{
+   /* display: inline;*/
+    margin-left: 0;
+}
+
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+    height: 100%;
+    width: 100%;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+
+    line-height: 3em;
+    text-align: center;
+}
+
+#item1, #item2, #item3{
+    position: relative;
+}
+#item1{
+    left:5%;
+}
+
+#item2 {
+    position: relative;
+    left:35%;
+}
+
+#item3{
+    
+    left:60%;
+}
